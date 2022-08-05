@@ -1,0 +1,47 @@
+Meeting Minutes for Sunday Week 5, 3/07/2022
+written by Danil Dosen
+
+Attendance: 
+    -Danil
+    -Long
+    -Yuntao
+
+Meeting summary:
+    The functions were split up into several seperate features and everyone was assigned features to work on as so,
+    
+AUTH		-Danil
+-	auth/login/v2
+-	auth/register/v2
+-	auth/logout/v1
+
+DMS	        -Danil
+-	dm/create/v1
+-	dm/list/v1
+-	dm/remove/v1
+-	dm/details/v1
+-	dm/leave/v1
+USERS		-Yuntao
+-	user/profile/v2
+-	users/all/v1
+-	user/profile/setname/v1
+-	user/profile/setemail/v1
+-	user/profile/sethandle/v1
+MESSAGES 	-Long
+-	channel/messages/v2
+-	message/send/v1
+-	message/edit/v1
+-	message/remove/v1
+-	message/senddm/v1
+-	dm/messages/v1
+CHANNELS	-Karen, Ke
+-	channels/create/v2
+-	channels/list/v2
+-	channels/listall/v2
+-	channel/details/v2
+-	channel/join/v2
+-	channel/invite/v2
+-	channel/leave/v1
+-	channel/addowner/v1
+-	channel/removeowner/v1
+OTHER
+-	clear/v1

@@ -1,0 +1,19 @@
+Meeting Minutes for sunday week 3, 19/06/2022
+written by Danil Dosen
+
+Attendance:
+    -Danil
+    -Yuntao
+    -Karen
+
+Progress so far:
+
+Danil has completed clearV1, authRegisterV1 and authLoginV1.
+Karen and Yuntao have started on their functions but not finished anything
+
+TODO:
+Karen is working on the channelCreateV1 function, to get it working asap and aims to 
+finish that and channelsListV1 by wednesday.
+Yuntao will be working on the userProfileV1 function, and after channelCreateV1 is made, will
+start working on the channelMessagesV1 function.
+We are all also setting up the issues board with what we need to do.

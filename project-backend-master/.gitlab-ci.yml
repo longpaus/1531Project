@@ -1,0 +1,32 @@
+image: comp1531/basic:latest
+
+stages:
+  - checks
+
+before_script:
+  - npm install
+
+cache:
+  paths:
+    - node_modules
+
+tests with coverage:
+  stage: checks
+  script:
+    - SERVER_LOG=$(mktemp)
+    - npm run ts-node-coverage >& $SERVER_LOG &
+    - sleep 10
+    - npm run test src/tests/**.ts
+    - kill -SIGINT %1
+    - cat $SERVER_LOG
+  coverage: '/All files\s*\|\s*(\d+(?:\.\d+)?)/'
+  artifacts:
+    paths:
+      - coverage/lcov-report/
+    expose_as: Coverage Report
+    expire_in: 1 week
+
+typecheck:
+  stage: checks
+  script:
+    - npm run tsc

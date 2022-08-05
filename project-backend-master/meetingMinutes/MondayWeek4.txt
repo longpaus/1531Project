@@ -1,0 +1,15 @@
+Meeting Minutes for monday week 4 20/06/2022
+written by Danil Dosen
+
+Attendance: 
+    -Danil
+    -Ke 
+
+This meeting was just a catchup for yesterdays meeting since Ke missed it.
+
+Progress:
+Ke hasn't started yet but knows what he needs to do
+
+TODO:
+Ke needs to write tests for and implement the channelsListallV1 function and the 
+channelDetailsV1 function.
