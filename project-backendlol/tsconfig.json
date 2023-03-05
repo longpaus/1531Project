@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+      "types": [
+        "jest"
+      ],
+      "esModuleInterop": true,
+      "noImplicitAny": false,
+      "noEmit": true,
+      "resolveJsonModule": true,
+  },
+  "include": [
+    "**/*.test.ts"
+  ],
+  "exclude": [
+    "**/**_broken.ts"
+  ]
+}

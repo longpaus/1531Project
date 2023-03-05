@@ -1,0 +1,26 @@
+image: comp1531/basic:latest
+
+stages:
+  - checks
+
+before_script:
+  - npm install
+
+cache:
+  paths:
+    - node_modules
+
+tests:
+  stage: checks
+  script:
+    - SERVER_LOG=$(mktemp)
+    - npm run start >& $SERVER_LOG &
+    - sleep 2
+    - npm run test src/tests/**.ts
+    - kill -SIGINT %1
+    - cat $SERVER_LOG
+
+typecheck:
+  stage: checks
+  script:
+    - npm run tsc
